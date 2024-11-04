@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import IsolationForest
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, RepeatVector, TimeDistributed
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
-from sklearn.ensemble import IsolationForest
 
 # Load data
 controlled_test_data = pd.read_csv("gps_dataset/dataset_controlled_test/data_set_controlled_test.csv")
@@ -38,8 +38,19 @@ features = [
 scaler = StandardScaler()
 scaled_training_data = scaler.fit_transform(training_data[features])
 
+# Isolation Forest for Static Anomaly Detection
+isolation_forest = IsolationForest(contamination=0.05, random_state=42)
+isolation_forest.fit(scaled_training_data)
+
+# Apply Isolation Forest to detect anomalies in test sets
+controlled_test_scaled = scaler.transform(controlled_test_data[features])
+uncontrolled_test_scaled = scaler.transform(uncontrolled_test_data[features])
+
+controlled_test_data['IF_anomaly'] = isolation_forest.predict(controlled_test_scaled)
+uncontrolled_test_data['IF_anomaly'] = isolation_forest.predict(uncontrolled_test_scaled)
+
 # Define sequence length for LSTM
-sequence_length = 10  # Define the length of each sequence
+sequence_length = 10
 X_train = []
 for i in range(len(scaled_training_data) - sequence_length):
     X_train.append(scaled_training_data[i:i + sequence_length])
@@ -62,7 +73,7 @@ model.compile(optimizer=Adam(learning_rate=0.001), loss="mse")
 early_stopping = EarlyStopping(monitor="loss", patience=5, restore_best_weights=True)
 history = model.fit(X_train, X_train, epochs=50, batch_size=32, validation_split=0.1, callbacks=[early_stopping])
 
-# Reshape test data for anomaly detection
+# Reshape test data for anomaly detection with LSTM
 def reshape_data_for_lstm(df, features, sequence_length):
     data = scaler.transform(df[features])
     sequences = []
@@ -73,7 +84,7 @@ def reshape_data_for_lstm(df, features, sequence_length):
 X_controlled_test = reshape_data_for_lstm(controlled_test_data, features, sequence_length)
 X_uncontrolled_test = reshape_data_for_lstm(uncontrolled_test_data, features, sequence_length)
 
-# Predict and calculate reconstruction error for test data
+# Calculate reconstruction error for LSTM
 def calculate_reconstruction_error(model, data):
     predictions = model.predict(data)
     reconstruction_errors = np.mean(np.square(predictions - data), axis=(1, 2))
@@ -82,20 +93,38 @@ def calculate_reconstruction_error(model, data):
 controlled_test_errors = calculate_reconstruction_error(model, X_controlled_test)
 uncontrolled_test_errors = calculate_reconstruction_error(model, X_uncontrolled_test)
 
-# Set anomaly threshold based on training data reconstruction error
-threshold = np.percentile(calculate_reconstruction_error(model, X_train), 95)
+# Set weights for weighted scoring approach
+alpha, beta = 0.6, 0.4  # Adjust weights based on importance or reliability of each model
 
-# Create a DataFrame to store sequence-based anomaly results for controlled and uncontrolled test sets
+# Normalize Isolation Forest anomaly to 0 and 1
 controlled_test_sequences = controlled_test_data.iloc[sequence_length:].copy()
-uncontrolled_test_sequences = uncontrolled_test_data.iloc[sequence_length:].copy()
+controlled_test_sequences['IF_score'] = (controlled_test_sequences['IF_anomaly'] == -1).astype(int)
 
-# Detect anomalies based on threshold
-controlled_test_sequences['anomaly'] = [1 if error > threshold else 0 for error in controlled_test_errors]
-uncontrolled_test_sequences['anomaly'] = [1 if error > threshold else 0 for error in uncontrolled_test_errors]
+# Normalize LSTM reconstruction error and scale between 0 and 1
+max_error = controlled_test_errors.max()
+controlled_test_sequences['LSTM_score'] = controlled_test_errors / max_error
 
-# Display anomalies
-print("Controlled Test Anomalies:")
-print(controlled_test_sequences[controlled_test_sequences['anomaly'] == 1].head())
+# Calculate hybrid score as a weighted sum of IF_score and LSTM_score
+controlled_test_sequences['hybrid_score'] = (
+    alpha * controlled_test_sequences['IF_score'] +
+    beta * controlled_test_sequences['LSTM_score']
+)
 
-print("\nUncontrolled Test Anomalies:")
-print(uncontrolled_test_sequences[uncontrolled_test_sequences['anomaly'] == 1].head())
+# Set a threshold on the hybrid score to classify as an anomaly
+threshold = 0.5  # Adjust based on desired sensitivity
+controlled_test_sequences['hybrid_anomaly'] = (controlled_test_sequences['hybrid_score'] > threshold).astype(int)
+
+# Display anomalies based on weighted scoring
+print("Controlled Test Anomalies (Weighted Hybrid):")
+print(controlled_test_sequences[controlled_test_sequences['hybrid_anomaly'] == 1])
+
+import joblib
+
+# Assuming `isolation_forest` is trained as shown in the previous code
+# Save the Isolation Forest model
+joblib.dump(isolation_forest, 'isolation_forest_model.joblib')
+print("Isolation Forest model saved as isolation_forest_model.joblib")
+
+# Save the LSTM Autoencoder model
+model.save('lstm_autoencoder_model.keras')
+print("LSTM Autoencoder model saved as lstm_autoencoder_model.h5")
