@@ -1,3 +1,4 @@
+import joblib
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -117,8 +118,6 @@ controlled_test_sequences['hybrid_anomaly'] = (controlled_test_sequences['hybrid
 # Display anomalies based on weighted scoring
 print("Controlled Test Anomalies (Weighted Hybrid):")
 print(controlled_test_sequences[controlled_test_sequences['hybrid_anomaly'] == 1])
-
-import joblib
 
 # Assuming `isolation_forest` is trained as shown in the previous code
 # Save the Isolation Forest model
