@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Commit 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
-    </list>
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Commit 6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,24 +41,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.automate.executor&quot;: &quot;Run&quot;,
-    &quot;Python.backend.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anand/Downloads/Projects/Crash Detection System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.automate.executor": "Run",
+    "Python.backend.executor": "Run",
+    "Python.backend1.executor": "Run",
+    "Python.backend_Dense_NN.executor": "Run",
+    "Python.code_base.executor": "Run",
+    "Python.convert.executor": "Run",
+    "Python.database_connection.executor": "Run",
+    "Python.database_fetch.executor": "Run",
+    "Python.fetch_all_user.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.preprocessing.executor": "Run",
+    "Python.process.executor": "Run",
+    "Python.process_all_user.executor": "Run",
+    "Python.process_all_user_dense_NN.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/anand/Downloads/Projects/Crash Detection System",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +93,12 @@
       <workItem from="1730528269933" duration="2885000" />
       <workItem from="1730791729196" duration="999000" />
       <workItem from="1730792741538" duration="609000" />
-      <workItem from="1730825126744" duration="4744000" />
+      <workItem from="1730825126744" duration="9932000" />
+      <workItem from="1731213136712" duration="17243000" />
+      <workItem from="1731342610032" duration="28000" />
+      <workItem from="1731353363819" duration="1640000" />
+      <workItem from="1731518394862" duration="8429000" />
+      <workItem from="1732382396806" duration="31110000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -135,7 +148,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730719432481</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit 4">
+      <option name="closed" value="true" />
+      <created>1730868925349</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730868925349</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit 5">
+      <option name="closed" value="true" />
+      <created>1732603814608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732603814608</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit 6">
+      <option name="closed" value="true" />
+      <created>1732604470317</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732604470317</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,11 +182,25 @@
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 2" />
     <MESSAGE value="Commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 3" />
+    <MESSAGE value="Commit 4" />
+    <MESSAGE value="Commit 5" />
+    <MESSAGE value="Commit 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/backend_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1730791799705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/backend_py$automate.coverage" NAME="automate Coverage Results" MODIFIED="1730134007698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+    <SUITE FILE_PATH="coverage/backend_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1732526661714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$database_fetch.coverage" NAME="database_fetch Coverage Results" MODIFIED="1732398312201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$process_all_user_dense_NN.coverage" NAME="process_all_user_dense_NN Coverage Results" MODIFIED="1732549822988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$backend1.coverage" NAME="backend1 Coverage Results" MODIFIED="1732526665323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1730123870439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$process_all_user.coverage" NAME="process_all_user Coverage Results" MODIFIED="1732431303314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$fetch_all_user.coverage" NAME="fetch_all_user Coverage Results" MODIFIED="1732549516750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$code_base.coverage" NAME="code_base Coverage Results" MODIFIED="1731578662623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../converted_tflite" />
+    <SUITE FILE_PATH="coverage/backend_py$test.coverage" NAME="test Coverage Results" MODIFIED="1731219753177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$backend_Dense_NN.coverage" NAME="backend_Dense_NN Coverage Results" MODIFIED="1732604488849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$process.coverage" NAME="process Coverage Results" MODIFIED="1731244316940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1731329923266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$automate.coverage" NAME="automate Coverage Results" MODIFIED="1730134007698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+    <SUITE FILE_PATH="coverage/backend_py$convert.coverage" NAME="convert Coverage Results" MODIFIED="1732526822993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
