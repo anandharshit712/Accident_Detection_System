@@ -55,12 +55,12 @@ def fetch_user_data():
 
 
 # Fetch user data
-user_data = fetch_user_data()
-
-# Print the fetched data
-print("Fetched Data Dictionary:")
-for mobile_number, documents in user_data.items():
-    print(f"Mobile Number: {mobile_number}")
-    print("Data:")
-    for doc in documents:
-        print(doc)
+# user_data = fetch_user_data()
+#
+# # Print the fetched data
+# print("Fetched Data Dictionary:")
+# for mobile_number, documents in user_data.items():
+#     print(f"Mobile Number: {mobile_number}")
+#     print("Data:")
+#     for doc in documents:
+#         print(doc)

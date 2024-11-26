@@ -1,13 +1,12 @@
-import pickle
-import pandas as pd
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import IsolationForest
+import pickle
 
-# Load all datasets, including the new ones
-controlled_test_data = pd.read_csv("gps_dataset/dataset_controlled_test/data_set_controlled_test.csv")
+# Load datasets
 training_data = pd.read_csv("gps_dataset/dataset_training/data_set_training.csv")
-uncontrolled_test_data = pd.read_csv("gps_dataset/dataset_uncontrolled_test/data_set_uncontrolled_test.csv")
+controlled_test_data = pd.read_csv("gps_dataset/dataset_controlled_test/data_set_controlled_test.csv")
 phones_gyroscope_data = pd.read_csv("Phones_gyroscope_reduced/Phones_gyroscope1.csv")
 phones_accelerometer_data = pd.read_csv("Phones_accelerometer_reduced/Phones_accelerometer1.csv")
 
@@ -43,7 +42,6 @@ def add_enhanced_features(df):
 # Apply feature engineering to all datasets
 training_data = add_enhanced_features(training_data)
 controlled_test_data = add_enhanced_features(controlled_test_data)
-uncontrolled_test_data = add_enhanced_features(uncontrolled_test_data)
 phones_gyroscope_data = add_enhanced_features(phones_gyroscope_data)
 phones_accelerometer_data = add_enhanced_features(phones_accelerometer_data)
 
@@ -54,35 +52,35 @@ features = [
     'acc_magnitude_mean', 'gyro_magnitude_mean', 'speed_variation'
 ]
 
-# Scale training data and the new datasets
+# Scale training data
 scaler = StandardScaler()
 scaled_training_data = scaler.fit_transform(training_data[features])
 
-# Combine scaled data for Isolation Forest training
+# Combine scaled data for training
 combined_training_data = np.vstack((scaled_training_data))
 
-# Train Isolation Forest model
-isolation_forest = IsolationForest(contamination=0.05, random_state=42)
-isolation_forest.fit(combined_training_data)
+# Simulate "epochs" for Isolation Forest training
+num_epochs = 50
+best_model = None
+best_score = float('inf')
 
-# Apply Isolation Forest to detect anomalies in test data
-controlled_test_scaled = scaler.transform(controlled_test_data[features])
+for epoch in range(num_epochs):
+    # Train Isolation Forest
+    isolation_forest = IsolationForest(contamination=0.05, random_state=epoch)
+    isolation_forest.fit(combined_training_data)
 
-controlled_test_data['IF_anomaly'] = isolation_forest.predict(controlled_test_scaled)
+    # Evaluate the model (example: anomaly score mean)
+    scores = isolation_forest.decision_function(combined_training_data)
+    mean_score = np.mean(scores)
 
-# Weighted scoring with Isolation Forest
-controlled_test_sequences = controlled_test_data.copy()
-controlled_test_sequences['IF_score'] = (controlled_test_sequences['IF_anomaly'] == -1).astype(int)
+    print(f"Epoch {epoch + 1}/{num_epochs}: Mean Anomaly Score = {mean_score:.4f}")
 
-# Define a threshold for anomalies (based on scores)
-threshold = 0.5  # Static threshold for anomaly detection
-controlled_test_sequences['hybrid_anomaly'] = controlled_test_sequences['IF_score'] > threshold
+    # Save the best model based on mean score (or other criteria)
+    if mean_score < best_score:
+        best_score = mean_score
+        best_model = isolation_forest
 
-# Display anomalies
-print("Controlled Test Anomalies (Isolation Forest):")
-print(controlled_test_sequences[controlled_test_sequences['hybrid_anomaly'] == 1])
-
-# Save the Isolation Forest model as a pickle file
-with open('isolation_forest_model.pkl', 'wb') as file:
-    pickle.dump(isolation_forest, file)
-print("Isolation Forest model saved as 'isolation_forest_model.pkl'")
+# Save the best model as a pickle file
+with open('Trained model/isolation_forest_model.pkl', 'wb') as file:
+    pickle.dump(best_model, file)
+print("Best Isolation Forest model saved as 'isolation_forest_model.pkl'")

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Commit 6" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Commit 5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accident_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/accident_status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_Dense_NN.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend_Dense_NN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetch_all_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/fetch_all_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isolation_forest_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/isolation_forest_model.pkl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -47,6 +54,7 @@
     "Python.backend.executor": "Run",
     "Python.backend1.executor": "Run",
     "Python.backend_Dense_NN.executor": "Run",
+    "Python.backend_isolation_only.executor": "Run",
     "Python.code_base.executor": "Run",
     "Python.convert.executor": "Run",
     "Python.database_connection.executor": "Run",
@@ -57,6 +65,7 @@
     "Python.process.executor": "Run",
     "Python.process_all_user.executor": "Run",
     "Python.process_all_user_dense_NN.executor": "Run",
+    "Python.process_only_isolation.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -98,7 +107,7 @@
       <workItem from="1731342610032" duration="28000" />
       <workItem from="1731353363819" duration="1640000" />
       <workItem from="1731518394862" duration="8429000" />
-      <workItem from="1732382396806" duration="31110000" />
+      <workItem from="1732382396806" duration="31977000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -172,32 +181,61 @@
       <option name="project" value="LOCAL" />
       <updated>1732604470317</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit 5">
+      <option name="closed" value="true" />
+      <created>1732604760646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732604760646</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit 5">
+      <option name="closed" value="true" />
+      <created>1732604850030</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732604850030</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 2" />
     <MESSAGE value="Commit 3" />
     <MESSAGE value="Commit 4" />
-    <MESSAGE value="Commit 5" />
     <MESSAGE value="Commit 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 6" />
+    <MESSAGE value="Commit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/backend_py$backend_isolation_only.coverage" NAME="backend_isolation_only Coverage Results" MODIFIED="1732605068490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1732526661714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$database_fetch.coverage" NAME="database_fetch Coverage Results" MODIFIED="1732398312201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$process_all_user_dense_NN.coverage" NAME="process_all_user_dense_NN Coverage Results" MODIFIED="1732549822988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$process_only_isolation.coverage" NAME="process_only_isolation Coverage Results" MODIFIED="1732605334704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend1.coverage" NAME="backend1 Coverage Results" MODIFIED="1732526665323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$preprocessing.coverage" NAME="preprocessing Coverage Results" MODIFIED="1730123870439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$process_all_user.coverage" NAME="process_all_user Coverage Results" MODIFIED="1732431303314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/backend_py$fetch_all_user.coverage" NAME="fetch_all_user Coverage Results" MODIFIED="1732549516750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$fetch_all_user.coverage" NAME="fetch_all_user Coverage Results" MODIFIED="1732605309985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$code_base.coverage" NAME="code_base Coverage Results" MODIFIED="1731578662623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../converted_tflite" />
     <SUITE FILE_PATH="coverage/backend_py$test.coverage" NAME="test Coverage Results" MODIFIED="1731219753177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/backend_py$backend_Dense_NN.coverage" NAME="backend_Dense_NN Coverage Results" MODIFIED="1732604488849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_py$backend_Dense_NN.coverage" NAME="backend_Dense_NN Coverage Results" MODIFIED="1732605414279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$process.coverage" NAME="process Coverage Results" MODIFIED="1731244316940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1731329923266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$automate.coverage" NAME="automate Coverage Results" MODIFIED="1730134007698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
