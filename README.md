@@ -1,29 +1,33 @@
 # Accident Detection System
 
-This project provides an accident detection system leveraging sensor data, trained models, and backend processing for real-time detection. It aims to improve road safety by analyzing accelerometer and gyroscope data to identify potential accidents.
+This project is an enhanced accident detection system with a real-time web application for alerting and monitoring accidents. It integrates sensor data, machine learning models, and a frontend dashboard for improved usability and road safety.
 
 ## Features
 
-- **Real-time Processing**: Detects accidents based on accelerometer and gyroscope data.
-- **Machine Learning Models**: Includes pretrained models like Dense Neural Networks and Isolation Forests.
-- **Comprehensive Dataset**: Contains training and test datasets for GPS, accelerometer, and gyroscope data.
-- **Backend Functionality**: Backend scripts for data processing and database integration.
+- **Real-time Accident Detection**: Leverages accelerometer and gyroscope data to identify accidents.
+- **Web Application**:
+  - Developed using React for visualizing accident data.
+  - Features include bed availability updates and alert notifications.
+- **Machine Learning Models**: Includes pretrained Dense Neural Network and Isolation Forest models.
+- **Comprehensive Dataset**: Updated and extensive datasets for training and testing.
+- **Backend Functionality**: Scripts for processing data, integrating alerts, and backend operations.
 
 ## Repository Structure
 
-- **`Trained model/`**: Contains pretrained models, including:
-  - `dense_autoencoder_model_Dense_NN.pkl`
-  - `isolation_forest_model.pkl`
-- **`Phones_accelerometer_reduced/`**: Reduced accelerometer datasets.
-- **`Phones_gyroscope_reduced/`**: Reduced gyroscope datasets.
+- **`Trained model/`**: Contains pretrained machine learning models.
+- **`Phones_accelerometer_reduced/` and `Phones_gyroscope_reduced/`**: Reduced accelerometer and gyroscope datasets.
 - **`gps_dataset/`**: GPS datasets for training, controlled testing, and uncontrolled testing.
-- **`Test/`**: Backend and database connection scripts for testing.
+- **`Test/`**: Backend scripts for database integration and testing.
+- **`webpage/`**: React-based frontend application files.
 - **Python Scripts**:
-  - `convert.py`: Data conversion utilities.
-  - `process_all_user_dense_NN.py`: Process data using Dense Neural Network.
-  - `backend_isolation_only.py`: Backend processing with Isolation Forest.
+  - `integrate_and_post_alert.py`: Combines detection results and posts alerts.
+  - `acquire_bed.py`: Estimates hospital bed availability.
+  - `backend_isolation_only.py`: Backend operations using Isolation Forest model.
+  - `convert.py`: Utility for data preprocessing.
 
 ## Installation
+
+### Backend Setup
 
 1. Clone the repository:
    ```bash
@@ -35,18 +39,39 @@ This project provides an accident detection system leveraging sensor data, train
    ```bash
    pip install -r requirements.txt
    ```
-   *(If `requirements.txt` is missing, install necessary packages manually based on the code, e.g., `pandas`, `scikit-learn`, etc.)*
+
+3. Run backend scripts:
+   ```bash
+   python integrate_and_post_alert.py
+   ```
+
+### Frontend Setup
+
+1. Navigate to the `webpage/` directory:
+   ```bash
+   cd webpage
+   ```
+
+2. Install React dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
 
 ## Usage
 
-1. **Preprocess Data**:
-   - Use scripts like `convert.py` or `process_all_user_dense_NN.py` to preprocess data.
+1. **Run Backend**:
+   - Execute backend scripts to process sensor data and detect accidents.
 
-2. **Run Backend Scripts**:
-   - Execute backend scripts in the `Test` directory to process data and integrate with the database.
+2. **Use Frontend**:
+   - Open the React web application to view accident alerts and hospital bed availability.
 
 3. **Analyze Results**:
-   - Use pretrained models or retrain using the provided datasets.
+   - Use pretrained models or retrain with the provided datasets for improved detection.
 
 ## Datasets
 

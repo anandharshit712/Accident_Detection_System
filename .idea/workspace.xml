@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Commit 7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accident_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/accident_status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fetch_all_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/fetch_all_user.py" afterDir="false" />
-    </list>
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="commit 9 (App and Webpage files)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,40 +42,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in testing.py.executor": "Run",
-    "Python.automate.executor": "Run",
-    "Python.backend.executor": "Run",
-    "Python.backend1.executor": "Run",
-    "Python.backend_Dense_NN.executor": "Run",
-    "Python.backend_isolation_only.executor": "Run",
-    "Python.code_base.executor": "Run",
-    "Python.convert.executor": "Run",
-    "Python.custom_test.executor": "Run",
-    "Python.database_connection.executor": "Run",
-    "Python.database_fetch.executor": "Run",
-    "Python.fetch_all_user.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.preprocessing.executor": "Run",
-    "Python.process.executor": "Run",
-    "Python.process_all_user.executor": "Run",
-    "Python.process_all_user_dense_NN.executor": "Run",
-    "Python.process_only_isolation.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/anand/Downloads/Projects/Crash Detection System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in testing.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.automate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_Dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_isolation_only.executor&quot;: &quot;Run&quot;,
+    &quot;Python.code_base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.convert.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_fetch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user_dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_only_isolation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anand/Downloads/Projects/Crash Detection System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\Trained model" />
@@ -116,6 +112,7 @@
       <workItem from="1732382396806" duration="43512000" />
       <workItem from="1732728555067" duration="186000" />
       <workItem from="1732728915394" duration="3938000" />
+      <workItem from="1735886922242" duration="414000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -221,7 +218,47 @@
       <option name="project" value="LOCAL" />
       <updated>1732607789334</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added readme file">
+      <option name="closed" value="true" />
+      <created>1735887002859</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887002859</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Commit 8">
+      <option name="closed" value="true" />
+      <created>1735887043729</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887043729</updated>
+    </task>
+    <task id="LOCAL-00016" summary="commit 9 (App files)">
+      <option name="closed" value="true" />
+      <created>1735887152803</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887152803</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit 10 (Python backend files)">
+      <option name="closed" value="true" />
+      <created>1735887178935</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887178935</updated>
+    </task>
+    <task id="LOCAL-00018" summary="commit 9 (App and Webpage files)">
+      <option name="closed" value="true" />
+      <created>1735887334707</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887334707</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +283,12 @@
     <MESSAGE value="Commit 5" />
     <MESSAGE value="Commit 6" />
     <MESSAGE value="Commit 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7" />
+    <MESSAGE value="Added readme file" />
+    <MESSAGE value="Commit 8" />
+    <MESSAGE value="commit 9 (App files)" />
+    <MESSAGE value="commit 10 (Python backend files)" />
+    <MESSAGE value="commit 9 (App and Webpage files)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 9 (App and Webpage files)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_py$backend_isolation_only.coverage" NAME="backend_isolation_only Coverage Results" MODIFIED="1732613690746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
