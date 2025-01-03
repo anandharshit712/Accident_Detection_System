@@ -1,19 +1,27 @@
 # Accident Detection System
 
-This project is an enhanced accident detection system with a real-time web application for alerting and monitoring accidents. It integrates sensor data, machine learning models, and a frontend dashboard for improved usability and road safety.
+This project is an enhanced accident detection system with a real-time web and mobile application for alerting and monitoring accidents. It integrates sensor data, machine learning models, a mobile app for on-the-go monitoring, and a frontend dashboard for improved usability and road safety.
 
 ## Features
 
 - **Real-time Accident Detection**: Leverages accelerometer and gyroscope data to identify accidents.
+- **Mobile Application**:
+  - Developed using Android Studio for on-the-go monitoring.
+  - Provides accident alerts and updates on hospital bed availability.
 - **Web Application**:
-  - Developed using React for visualizing accident data.
-  - Features include bed availability updates and alert notifications.
+  - Built with React for visualizing accident data.
+  - Features bed availability updates and alert notifications.
 - **Machine Learning Models**: Includes pretrained Dense Neural Network and Isolation Forest models.
 - **Comprehensive Dataset**: Updated and extensive datasets for training and testing.
 - **Backend Functionality**: Scripts for processing data, integrating alerts, and backend operations.
 
 ## Repository Structure
 
+- **`App/`**: Android-based mobile application files.
+  - `MainActivity.java`: Entry point of the application.
+  - `ui/home/`: Home screen of the application.
+  - `ui/dashboard/`: Dashboard for accident monitoring.
+  - `ui/notifications/`: Notification center for updates.
 - **`Trained model/`**: Contains pretrained machine learning models.
 - **`Phones_accelerometer_reduced/` and `Phones_gyroscope_reduced/`**: Reduced accelerometer and gyroscope datasets.
 - **`gps_dataset/`**: GPS datasets for training, controlled testing, and uncontrolled testing.
@@ -45,7 +53,7 @@ This project is an enhanced accident detection system with a real-time web appli
    python integrate_and_post_alert.py
    ```
 
-### Frontend Setup
+### Frontend Setup (Web Application)
 
 1. Navigate to the `webpage/` directory:
    ```bash
@@ -62,6 +70,14 @@ This project is an enhanced accident detection system with a real-time web appli
    npm start
    ```
 
+### Mobile App Setup
+
+1. Navigate to the `App/` directory and open it in Android Studio.
+
+2. Build the project to install dependencies.
+
+3. Run the app on an emulator or physical device.
+
 ## Usage
 
 1. **Run Backend**:
@@ -70,7 +86,10 @@ This project is an enhanced accident detection system with a real-time web appli
 2. **Use Frontend**:
    - Open the React web application to view accident alerts and hospital bed availability.
 
-3. **Analyze Results**:
+3. **Use Mobile App**:
+   - Launch the mobile app for on-the-go access to accident alerts and hospital data.
+
+4. **Analyze Results**:
    - Use pretrained models or retrain with the provided datasets for improved detection.
 
 ## Datasets
