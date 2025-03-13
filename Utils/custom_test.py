@@ -8,7 +8,7 @@ db = client["test"]  # Replace with your database name
 collection = db["accidents"]  # Replace with your collection name
 
 # Load the trained Isolation Forest model
-with open('Trained model/isolation_forest_model.pkl', 'rb') as file:
+with open('../Trained model/isolation_forest_model.pkl', 'rb') as file:
     isolation_forest_model = pickle.load(file)
 
 

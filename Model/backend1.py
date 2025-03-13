@@ -165,7 +165,7 @@ controlled_test_sequences['hybrid_anomaly'] = (controlled_test_sequences['hybrid
 general_table_controlled_sequences['hybrid_anomaly'] = (general_table_controlled_sequences['hybrid_score'] > threshold).astype(int)
 
 # Display anomalies
-print("Controlled Test Anomalies (Weighted Hybrid):")
+print("Controlled Model Anomalies (Weighted Hybrid):")
 print(controlled_test_sequences[controlled_test_sequences['hybrid_anomaly'] == 1])
 print(controlled_test_sequences[general_table_controlled_sequences['hybrid_anomaly'] == 1])
 

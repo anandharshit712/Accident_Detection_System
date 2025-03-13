@@ -2,11 +2,11 @@ import json
 import numpy as np
 import pickle
 from datetime import datetime
-from fetch_all_user import fetch_user_data
-from post_json import post_to_mongodb
+from bed_allocation.fetch_all_user import fetch_user_data
+from bed_allocation.post_json import post_to_mongodb
 
 # Load the Isolation Forest model
-with open('Trained model/isolation_forest_model.pkl', 'rb') as file:
+with open('../Trained model/isolation_forest_model.pkl', 'rb') as file:
     isolation_forest_model = pickle.load(file)
 
 
@@ -99,7 +99,7 @@ def process_data_and_save_json():
             results.append(accident_details)
 
     # Save results to a JSON file using the custom DateTimeEncoder
-    with open('accident_status.json', 'w') as j:
+    with open('../accident_status.json', 'w') as j:
         json.dump(results, j, indent=4, cls=DateTimeEncoder)
 
     return results

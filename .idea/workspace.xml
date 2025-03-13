@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Updated Readme File" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Updated Readme File">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bedsupdate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/backend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/backend1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/backend1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/database_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/database_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/database_fetch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/database_fetch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acquire_bed.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/acquire_bed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alertpage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_isolation_only.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/backend_isolation_only.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bed_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/bed_approximation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetch_all_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/fetch_all_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/hospital_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital_pq.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/hospital_pq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integrate_and_post_alert.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/integrate_and_post_alert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/post_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_all_user_dense_NN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/process_all_user_dense_NN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_only_isolation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/process_only_isolation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_file_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/single_file_integration.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,50 +66,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in testing.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.automate.executor&quot;: &quot;Run&quot;,
-    &quot;Python.backend.executor&quot;: &quot;Run&quot;,
-    &quot;Python.backend1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.backend_Dense_NN.executor&quot;: &quot;Run&quot;,
-    &quot;Python.backend_isolation_only.executor&quot;: &quot;Run&quot;,
-    &quot;Python.code_base.executor&quot;: &quot;Run&quot;,
-    &quot;Python.convert.executor&quot;: &quot;Run&quot;,
-    &quot;Python.custom_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database_connection.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database_fetch.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fetch_all_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.process.executor&quot;: &quot;Run&quot;,
-    &quot;Python.process_all_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python.process_all_user_dense_NN.executor&quot;: &quot;Run&quot;,
-    &quot;Python.process_only_isolation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anand/Downloads/Projects/Crash Detection System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.App.js.executor": "Run",
+    "Python tests.Python tests in testing.py.executor": "Run",
+    "Python.automate.executor": "Run",
+    "Python.backend.executor": "Run",
+    "Python.backend1.executor": "Run",
+    "Python.backend_Dense_NN.executor": "Run",
+    "Python.backend_isolation_only.executor": "Run",
+    "Python.code_base.executor": "Run",
+    "Python.convert.executor": "Run",
+    "Python.custom_test.executor": "Run",
+    "Python.database_connection.executor": "Run",
+    "Python.database_fetch.executor": "Run",
+    "Python.fetch_all_user.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.preprocessing.executor": "Run",
+    "Python.process.executor": "Run",
+    "Python.process_all_user.executor": "Run",
+    "Python.process_all_user_dense_NN.executor": "Run",
+    "Python.process_only_isolation.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/anand/Downloads/Projects/Crash Detection System",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\Utils" />
+      <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\bed_allocation" />
       <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\Trained model" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
-        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -113,6 +140,8 @@
       <workItem from="1732728555067" duration="186000" />
       <workItem from="1732728915394" duration="3938000" />
       <workItem from="1735886922242" duration="655000" />
+      <workItem from="1735887826161" duration="632000" />
+      <workItem from="1741894406758" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -266,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735887571135</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated Readme File">
+      <option name="closed" value="true" />
+      <created>1735887846654</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735887846654</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -150,7 +150,7 @@ threshold = 0.5
 controlled_test_sequences['hybrid_anomaly'] = (controlled_test_sequences['hybrid_score'] > threshold).astype(int)
 
 # Display anomalies
-print("Controlled Test Anomalies (Weighted Hybrid):")
+print("Controlled Model Anomalies (Weighted Hybrid):")
 print(controlled_test_sequences[controlled_test_sequences['hybrid_anomaly'] == 1])
 
 # Save the models

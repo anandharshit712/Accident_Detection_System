@@ -5,10 +5,10 @@ from sklearn.ensemble import IsolationForest
 import pickle
 
 # Load datasets
-training_data = pd.read_csv("gps_dataset/dataset_training/data_set_training.csv")
-controlled_test_data = pd.read_csv("gps_dataset/dataset_controlled_test/data_set_controlled_test.csv")
-phones_gyroscope_data = pd.read_csv("Phones_gyroscope_reduced/Phones_gyroscope1.csv")
-phones_accelerometer_data = pd.read_csv("Phones_accelerometer_reduced/Phones_accelerometer1.csv")
+training_data = pd.read_csv("../gps_dataset/dataset_training/data_set_training.csv")
+controlled_test_data = pd.read_csv("../gps_dataset/dataset_controlled_test/data_set_controlled_test.csv")
+phones_gyroscope_data = pd.read_csv("../Phones_gyroscope_reduced/Phones_gyroscope1.csv")
+phones_accelerometer_data = pd.read_csv("../Phones_accelerometer_reduced/Phones_accelerometer1.csv")
 
 # Rename columns in the Phones datasets to match expected feature names
 phones_gyroscope_data = phones_gyroscope_data.rename(columns={'x': 'gyrox', 'y': 'gyroy', 'z': 'gyroz'})
@@ -81,6 +81,6 @@ for epoch in range(num_epochs):
         best_model = isolation_forest
 
 # Save the best model as a pickle file
-with open('Trained model/isolation_forest_model.pkl', 'wb') as file:
+with open('../Trained model/isolation_forest_model.pkl', 'wb') as file:
     pickle.dump(best_model, file)
 print("Best Isolation Forest model saved as 'isolation_forest_model.pkl'")
