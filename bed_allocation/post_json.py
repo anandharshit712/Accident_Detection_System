@@ -22,7 +22,6 @@ def post_to_mongodb(json_data):
     if not json_data:
         print("No data to post to MongoDB.")
         return
-
     try:
         result = collection.insert_many(json_data)
         print(f"Successfully inserted {len(result.inserted_ids)} records into MongoDB Atlas.")

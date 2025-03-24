@@ -7,10 +7,10 @@ from bed_allocation.post_json import post_to_mongodb
 # from tensorflow.keras.models import load_model
 
 # Load the Isolation Forest model
-with open('../Trained model/isolation_forest_model_Dense_NN.pkl', 'rb') as file:
+with open('../Detection_model_mobile/Trained model/isolation_forest_model_Dense_NN.pkl', 'rb') as file:
     isolation_forest_model = pickle.load(file)
 
-with open('../Trained model/dense_autoencoder_model_Dense_NN.pkl', 'rb') as file:
+with open('../Detection_model_mobile/Trained model/dense_autoencoder_model_Dense_NN.pkl', 'rb') as file:
     dense_autoencoder_model = pickle.load(file)
 
 # Load the Dense Autoencoder model

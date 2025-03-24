@@ -6,7 +6,7 @@ from bed_allocation.fetch_all_user import fetch_user_data
 from bed_allocation.post_json import post_to_mongodb
 
 # Load the Isolation Forest model
-with open('../Trained model/isolation_forest_model.pkl', 'rb') as file:
+with open('../Detection_model_mobile/Trained model/isolation_forest_model.pkl', 'rb') as file:
     isolation_forest_model = pickle.load(file)
 
 

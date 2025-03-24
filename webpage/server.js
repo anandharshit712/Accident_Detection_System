@@ -101,10 +101,10 @@ const sensorDataSchema = new mongoose.Schema({
     gyroZ: Number,
     timestamp: { type: Date, default: Date.now } // Add a timestamp for each entry
   });
-  
+
   const SensorData = mongoose.model("SensorData", sensorDataSchema);
 
-  // Beds Schema and Model
+  // Beds Schema and Model_backend
 const bedsSchema = new mongoose.Schema({
   lat: Number,
   long: Number,
@@ -114,7 +114,7 @@ const bedsSchema = new mongoose.Schema({
 });
 const Beds = mongoose.model("Beds", bedsSchema);
 
-// Accident Schema and Model
+// Accident Schema and Model_backend
 const accidentSchema = new mongoose.Schema({
   lat: Number,
   long: Number,
@@ -122,12 +122,12 @@ const accidentSchema = new mongoose.Schema({
   status: Boolean,
 });
 const Accident = mongoose.model("Accident", accidentSchema);
-  
+
   // Endpoint to handle sensor data upload
   app.post("/upload_sensor_data", async (req, res) => {
     console.log("Received data:", req.body); // Log received data
     const { mobileNumber, latitude, longitude, speed, accelX, accelY, accelZ, gyroX, gyroY, gyroZ } = req.body;
-  
+
     try {
       // Create a new document for each data point
       const newSensorData = new SensorData({
@@ -142,7 +142,7 @@ const Accident = mongoose.model("Accident", accidentSchema);
         gyroY,
         gyroZ,
       });
-  
+
       await newSensorData.save();
       res.status(201).send("Data saved successfully"); // Use status code 201 for created resources
     } catch (error) {
@@ -162,7 +162,7 @@ const Accident = mongoose.model("Accident", accidentSchema);
       console.error("Error deleting old data:", error);
     }
   }
-  
+
   // Start the interval to delete old data every second
   setInterval(deleteOldData, 1000); // 1000 milliseconds = 1 second
 
@@ -256,7 +256,7 @@ app.post("/accidents", async (req, res) => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Hospital Schema and Model
+// Hospital Schema and Model_backend
 const hospitalSchema = new mongoose.Schema({
   hospitalID: { type: Number, unique: true, required: true },
   latitude: { type: Number, required: true },
