@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Setup files in directories">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Crash Detection System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Crash Detection System.iml" afterDir="false" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Detection Model Update">
+      <change afterPath="$PROJECT_DIR$/Utils/plot_isolation_forest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/backend.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/backend1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/database_connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/database_fetch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phones_accelerometer_reduced/Phones_accelerometer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/Phones_accelerometer_reduced/Phones_accelerometer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phones_accelerometer_reduced/Phones_accelerometer1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/Phones_accelerometer_reduced/Phones_accelerometer1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phones_gyroscope_reduced/Phones_gyroscope.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/Phones_gyroscope_reduced/Phones_gyroscope.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Phones_gyroscope_reduced/Phones_gyroscope1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/Phones_gyroscope_reduced/Phones_gyroscope1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trained model/dense_autoencoder_model_Dense_NN.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trained model/isolation_forest_model.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trained model/isolation_forest_model_Dense_NN.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/backend_isolation_only.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/backend_isolation_only.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/convert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accident_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/accident_status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bed_allocation/post_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/bed_allocation/post_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_controlled_test/General_table_controlled_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_controlled_test/General_table_controlled_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_controlled_test/data_set_controlled_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_controlled_test/data_set_controlled_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_training/data_set_training.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_training/data_set_training.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_training/general_table_training.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_training/general_table_training.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_uncontrolled_test/data_set_uncontrolled_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_uncontrolled_test/data_set_uncontrolled_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gps_dataset/dataset_uncontrolled_test/general_table_uncontrolled_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_mobile/gps_dataset/dataset_uncontrolled_test/general_table_uncontrolled_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpage/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpage/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,51 +53,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.App.js.executor": "Run",
-    "Python tests.Python tests in testing.py.executor": "Run",
-    "Python.automate.executor": "Run",
-    "Python.backend.executor": "Run",
-    "Python.backend1.executor": "Run",
-    "Python.backend_Dense_NN.executor": "Run",
-    "Python.backend_extra_dataset.executor": "Run",
-    "Python.backend_imporved.executor": "Run",
-    "Python.backend_isolation_only.executor": "Run",
-    "Python.code_base.executor": "Run",
-    "Python.convert.executor": "Run",
-    "Python.custom_test.executor": "Run",
-    "Python.database_connection.executor": "Run",
-    "Python.database_fetch.executor": "Run",
-    "Python.fetch_all_user.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model_backend.executor": "Run",
-    "Python.model_test_1.executor": "Run",
-    "Python.plot_model_test.executor": "Run",
-    "Python.preprocessing.executor": "Run",
-    "Python.process.executor": "Run",
-    "Python.process_all_user.executor": "Run",
-    "Python.process_all_user_dense_NN.executor": "Run",
-    "Python.process_only_isolation.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anand/Downloads/Projects/Crash Detection System/Trained model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.App.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in testing.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.automate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_Dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_extra_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_imporved.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_isolation_only.executor&quot;: &quot;Run&quot;,
+    &quot;Python.code_base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.convert.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_fetch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_test_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plot_model_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user_dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_only_isolation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anand/Downloads/Projects/Crash Detection System/Trained model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\Detection_model_mobile" />
@@ -171,7 +147,10 @@
       <workItem from="1742362784025" duration="36685000" />
       <workItem from="1742621384707" duration="4280000" />
       <workItem from="1742715177711" duration="1023000" />
-      <workItem from="1742716211107" duration="4928000" />
+      <workItem from="1742716211107" duration="12818000" />
+      <workItem from="1742906605372" duration="1470000" />
+      <workItem from="1743159043688" duration="3832000" />
+      <workItem from="1743273509139" duration="3870000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -341,7 +320,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741895329448</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Detection Model Update">
+      <option name="closed" value="true" />
+      <created>1742798353025</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742798353025</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Detection Model Update">
+      <option name="closed" value="true" />
+      <created>1742798361467</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1742798361468</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +368,8 @@
     <MESSAGE value="commit 9 (App and Webpage files)" />
     <MESSAGE value="Updated Readme File" />
     <MESSAGE value="Setup files in directories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup files in directories" />
+    <MESSAGE value="Detection Model Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detection Model Update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_py$process_only_isolation.coverage" NAME="process_only_isolation Coverage Results" MODIFIED="1732614840338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -381,23 +377,24 @@
     <SUITE FILE_PATH="coverage/backend_py$database_fetch.coverage" NAME="database_fetch Coverage Results" MODIFIED="1732398312201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$process_all_user.coverage" NAME="process_all_user Coverage Results" MODIFIED="1732431303314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/process_py$convert.coverage" NAME="convert Coverage Results" MODIFIED="1742459927123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils" />
-    <SUITE FILE_PATH="coverage/process_py$process.coverage" NAME="process Coverage Results" MODIFIED="1742472336983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
     <SUITE FILE_PATH="coverage/backend_py$convert.coverage" NAME="convert Coverage Results" MODIFIED="1732526822993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/process_py$process.coverage" NAME="process Coverage Results" MODIFIED="1742472336983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
     <SUITE FILE_PATH="coverage/backend_py$process.coverage" NAME="process Coverage Results" MODIFIED="1731244316940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$fetch_all_user.coverage" NAME="fetch_all_user Coverage Results" MODIFIED="1732728650099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/process_py$model_test_1.coverage" NAME="model_test_1 Coverage Results" MODIFIED="1742717618384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_video" />
+    <SUITE FILE_PATH="coverage/process_py$model_test_1.coverage" NAME="model_test_1 Coverage Results" MODIFIED="1742906908431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_video" />
+    <SUITE FILE_PATH="coverage/process_py$database_fetch.coverage" NAME="database_fetch Coverage Results" MODIFIED="1742798547599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
     <SUITE FILE_PATH="coverage/backend_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1731329923266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend_Dense_NN.coverage" NAME="backend_Dense_NN Coverage Results" MODIFIED="1732605414279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend_isolation_only.coverage" NAME="backend_isolation_only Coverage Results" MODIFIED="1732613690746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$custom_test.coverage" NAME="custom_test Coverage Results" MODIFIED="1732614033807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/process_py$backend_extra_dataset.coverage" NAME="backend_extra_dataset Coverage Results" MODIFIED="1742363887850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
     <SUITE FILE_PATH="coverage/backend_py$test.coverage" NAME="test Coverage Results" MODIFIED="1731219753177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/process_py$model_backend.coverage" NAME="model_backend Coverage Results" MODIFIED="1742476321876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model_backend" />
+    <SUITE FILE_PATH="coverage/process_py$model_backend.coverage" NAME="model_backend Coverage Results" MODIFIED="1742807779357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
     <SUITE FILE_PATH="coverage/backend_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1732526661714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend1.coverage" NAME="backend1 Coverage Results" MODIFIED="1732526665323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$process_all_user_dense_NN.coverage" NAME="process_all_user_dense_NN Coverage Results" MODIFIED="1732607456760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/process_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1742363403764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
-    <SUITE FILE_PATH="coverage/process_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1742475385216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model_backend" />
+    <SUITE FILE_PATH="coverage/process_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1742807469301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
     <SUITE FILE_PATH="coverage/backend_py$.coverage" NAME=" Coverage Results" MODIFIED="1732606411724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$code_base.coverage" NAME="code_base Coverage Results" MODIFIED="1731578662623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../converted_tflite" />
     <SUITE FILE_PATH="coverage/backend_py$automate.coverage" NAME="automate Coverage Results" MODIFIED="1730134007698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
