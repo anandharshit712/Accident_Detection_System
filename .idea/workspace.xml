@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Utils update">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Added main file to run all process">
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/detect_accident.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/receive_frames.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/training.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/convert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/plot_isolation_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/plot_isolation_forest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accident_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/accident_status.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,17 @@
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
@@ -44,6 +56,9 @@
     &quot;accountId&quot;: &quot;f2401bd4-6d15-4f08-8b3d-a3486a8cf97f&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -56,57 +71,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.App.js.executor": "Run",
-    "Node.js.serve.js.executor": "Run",
-    "Python tests.Python tests in testing.py.executor": "Run",
-    "Python.automate.executor": "Run",
-    "Python.backend.executor": "Run",
-    "Python.backend1.executor": "Run",
-    "Python.backend_Dense_NN.executor": "Run",
-    "Python.backend_extra_dataset.executor": "Run",
-    "Python.backend_imporved.executor": "Run",
-    "Python.backend_isolation_only.executor": "Run",
-    "Python.code_base.executor": "Run",
-    "Python.convert.executor": "Run",
-    "Python.custom_test.executor": "Run",
-    "Python.database_connection.executor": "Run",
-    "Python.database_fetch.executor": "Run",
-    "Python.fetch_all_user.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model_backend.executor": "Run",
-    "Python.model_test_1.executor": "Run",
-    "Python.model_training_final.executor": "Run",
-    "Python.page_test_endpoint.executor": "Run",
-    "Python.plot_isolation_forest.executor": "Run",
-    "Python.plot_model_test.executor": "Run",
-    "Python.preprocessing.executor": "Run",
-    "Python.process.executor": "Run",
-    "Python.process_all_user.executor": "Run",
-    "Python.process_all_user_dense_NN.executor": "Run",
-    "Python.process_only_isolation.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/anand/Downloads/Projects/Crash Detection System/Detection_model_mobile/Trained model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.App.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.serve.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in testing.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.automate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_Dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_extra_dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_imporved.executor&quot;: &quot;Run&quot;,
+    &quot;Python.backend_isolation_only.executor&quot;: &quot;Run&quot;,
+    &quot;Python.code_base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.convert.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_connection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_fetch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fetch_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_backend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_test_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_training_final.executor&quot;: &quot;Run&quot;,
+    &quot;Python.page_test_endpoint.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plot_isolation_forest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plot_model_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_all_user_dense_NN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.process_only_isolation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.receive_frames.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anand/Downloads/Projects/Crash Detection System/Detection_model_mobile/Trained model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anand\Downloads\Projects\Crash Detection System\Detection_model_mobile\Image" />
@@ -161,7 +178,10 @@
       <workItem from="1742906605372" duration="1470000" />
       <workItem from="1743159043688" duration="3832000" />
       <workItem from="1743273509139" duration="52420000" />
-      <workItem from="1743451802672" duration="20583000" />
+      <workItem from="1743451802672" duration="38762000" />
+      <workItem from="1743774017091" duration="34000" />
+      <workItem from="1743774470366" duration="170000" />
+      <workItem from="1743794726243" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -355,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743277833300</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added main file to run all process">
+      <option name="closed" value="true" />
+      <created>1743616526256</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1743616526256</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +417,8 @@
     <MESSAGE value="Setup files in directories" />
     <MESSAGE value="Detection Model Update" />
     <MESSAGE value="Utils update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Utils update" />
+    <MESSAGE value="Added main file to run all process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main file to run all process" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_py$process_only_isolation.coverage" NAME="process_only_isolation Coverage Results" MODIFIED="1732614840338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -412,6 +441,7 @@
     <SUITE FILE_PATH="coverage/process_py$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1743453360612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Phones_accelerometer1" />
     <SUITE FILE_PATH="coverage/process_py$model_training_final.coverage" NAME="model_training_final Coverage Results" MODIFIED="1743453583400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
     <SUITE FILE_PATH="coverage/backend_py$test.coverage" NAME="test Coverage Results" MODIFIED="1731219753177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/process_py$receive_frames.coverage" NAME="receive_frames Coverage Results" MODIFIED="1743772854146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_video" />
     <SUITE FILE_PATH="coverage/process_py$model_backend.coverage" NAME="model_backend Coverage Results" MODIFIED="1743497608617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
     <SUITE FILE_PATH="coverage/backend_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1732526661714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$backend1.coverage" NAME="backend1 Coverage Results" MODIFIED="1732526665323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
