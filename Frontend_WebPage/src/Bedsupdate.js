@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import {Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import "./dbs.css"
 
 const Bedsupdate = () => {
-  const [hospitalID, setHospitalID] = useState('');
+  const navigate = useNavigate();
+  //const [hospitalID, setHospitalID] = useState('');
   const [hospitalData, setHospitalData] = useState(null);
   const [beds, setBeds] = useState('');
+  const hospitalID= localStorage.getItem('Hospital_ID');
 
   // Fetch Hospital by ID
   const fetchHospital = async () => {
     try {
-      const response = await axios.get(`https://accident-cisl.onrender.com/hospital/${hospitalID}`);
+      const response = await axios.get(`https://crash-api-six.vercel.app/hospital/${hospitalID}`);
       setHospitalData(response.data);
       setBeds(response.data.no_of_available_beds);
     } catch (error) {
@@ -18,11 +21,15 @@ const Bedsupdate = () => {
       setHospitalData(null);
     }
   };
+   
+  useEffect(() => {
+    fetchHospital();
+      }, []);
 
   // Update Beds
   const updateBeds = async () => {
     try {
-      const response = await axios.patch(`https://accident-cisl.onrender.com/hospital/${hospitalID}`, {
+      const response = await axios.patch(`https://crash-api-six.vercel.app/hospital/${hospitalID}`, {
         no_of_available_beds: beds
       });
       setHospitalData(response.data);
@@ -33,19 +40,24 @@ const Bedsupdate = () => {
     }
   };
 
+  const logout=()=>{
+    setTimeout(()=>{navigate("/")},500);
+    localStorage.removeItem('Hospital_ID');
+  }
+
   return (
     <>
       <h1>Hospital Bed Management</h1>
       
       <div class="container">
       <div>
-        <input
+        {/* <input
           type="number"
           placeholder="Enter Hospital ID"
           value={hospitalID}
           onChange={(e) => setHospitalID(e.target.value)}
-        />
-        <button onClick={fetchHospital}>Find Hospital</button>
+        /> */}
+        <button onClick={logout}>Log Out</button>
       </div>
         <div>
 
