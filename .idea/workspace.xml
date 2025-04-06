@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="Added video feed receiving and processing">
-      <change afterPath="$PROJECT_DIR$/Detection_model_video/frame_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="added frame extaction code">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detection_model_video/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_video/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detection_model_video/training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_video/training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Detection_model_video/receive_frames.py" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_video/receive_frames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -186,6 +186,7 @@
       <workItem from="1743796331888" duration="2866000" />
       <workItem from="1743851070750" duration="6219000" />
       <workItem from="1743874716769" duration="2198000" />
+      <workItem from="1743923677294" duration="4271000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -395,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743796617963</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added frame extaction code">
+      <option name="closed" value="true" />
+      <created>1743923734317</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1743923734318</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +440,8 @@
     <MESSAGE value="Utils update" />
     <MESSAGE value="Added main file to run all process" />
     <MESSAGE value="Added video feed receiving and processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added video feed receiving and processing" />
+    <MESSAGE value="added frame extaction code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added frame extaction code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_py$process_only_isolation.coverage" NAME="process_only_isolation Coverage Results" MODIFIED="1732614840338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -465,6 +475,7 @@
     <SUITE FILE_PATH="coverage/backend_py$process_all_user_dense_NN.coverage" NAME="process_all_user_dense_NN Coverage Results" MODIFIED="1732607456760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/process_py$backend.coverage" NAME="backend Coverage Results" MODIFIED="1742363403764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
     <SUITE FILE_PATH="coverage/process_py$database_connection.coverage" NAME="database_connection Coverage Results" MODIFIED="1743497599561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_mobile" />
+    <SUITE FILE_PATH="coverage/training_py$receive_frames.coverage" NAME="receive_frames Coverage Results" MODIFIED="1743934673417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Detection_model_video" />
     <SUITE FILE_PATH="coverage/backend_py$.coverage" NAME=" Coverage Results" MODIFIED="1732606411724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_py$code_base.coverage" NAME="code_base Coverage Results" MODIFIED="1731578662623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../converted_tflite" />
     <SUITE FILE_PATH="coverage/backend_py$automate.coverage" NAME="automate Coverage Results" MODIFIED="1730134007698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
