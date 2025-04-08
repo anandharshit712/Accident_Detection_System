@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="added mobile detection code">
-      <change afterPath="$PROJECT_DIR$/Detection_model_video/model_visulaization.py" afterDir="false" />
+    <list default="true" id="a6b9be85-a6f5-4821-8eed-67024fec2d28" name="Changes" comment="added video model visualization code">
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/ResNet + LSTM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Detection_model_video/model_block_diagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Detection_model_video/receive_frames.py" beforeDir="false" afterPath="$PROJECT_DIR$/Detection_model_video/receive_frames.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -87,6 +90,7 @@
     "Python.custom_test.executor": "Run",
     "Python.database_connection.executor": "Run",
     "Python.database_fetch.executor": "Run",
+    "Python.detect_accident.executor": "Run",
     "Python.fetch_all_user.executor": "Run",
     "Python.frame_extraction.executor": "Run",
     "Python.main.executor": "Run",
@@ -187,7 +191,8 @@
       <workItem from="1743851070750" duration="6219000" />
       <workItem from="1743874716769" duration="2198000" />
       <workItem from="1743923677294" duration="7209000" />
-      <workItem from="1744009562080" duration="1540000" />
+      <workItem from="1744009562080" duration="1956000" />
+      <workItem from="1744089876467" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -421,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743967795285</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added video model visualization code">
+      <option name="closed" value="true" />
+      <created>1744015295129</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1744015295129</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +473,8 @@
     <MESSAGE value="added frame extaction code" />
     <MESSAGE value="added frame extraction code" />
     <MESSAGE value="added mobile detection code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mobile detection code" />
+    <MESSAGE value="added video model visualization code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added video model visualization code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_py$process_only_isolation.coverage" NAME="process_only_isolation Coverage Results" MODIFIED="1732614840338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
