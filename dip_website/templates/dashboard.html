@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel='stylesheet' type='text/css' href='/static/styles.css'>
+</head>
+<body>
+
+<button id="logout" onclick="logout()">Logout</button>
+<br><br>
+<h1>Hospital Bed Management</h1>
+
+<div class="container">
+    <div>
+        <div>
+            <h3>Hospital Details</h3>
+            <p>Hospital ID: {{ hospital.hospitalID }} </p>
+            <p>Latitude: {{ hospital.latitude }}</p>
+            <p>Longitude: {{ hospital.longitude }}</p>
+        </div>
+
+        <div>
+            <h3>Update Beds</h3>
+            <p>Total Beds: {{ hospital.total_of_available_beds }}</p>
+            <p>Available Beds: {{ hospital.no_of_available_beds }}</p>
+        </div>
+
+        <form method="POST" action="{{ url_for('update_beds') }}">
+            <input type="number" name="available_beds" placeholder="Enter new available beds" required>
+            <button type="submit">Update Beds</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function logout() {
+        window.location.href = "/logout";
+    }
+
+    function checkAlert() {
+        fetch('/get-alert')
+            .then(response => response.json())
+            .then(data => {
+                if (data.show) {
+                    if (confirm(`🚨 Emergency Alert!\nHospital ID: ${data.hID}\nBeds Needed: ${data.noOfBeds}\nClick OK to allocate.`)) {
+                        resolveAlert(data.hID, data.noOfBeds);
+                    }
+                }
+            });
+    }
+
+    function resolveAlert(hID, noOfBeds) {
+        fetch('/resolve-alert', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ hID: hID, noOfBeds: noOfBeds })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('✅ Beds updated and alert resolved.');
+                location.reload();
+            }
+        });
+    }
+
+    // Check every 5 seconds
+    setInterval(checkAlert, 5000);
+</script>
+
+</body>
+</html>
