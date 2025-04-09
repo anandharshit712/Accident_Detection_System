@@ -15,11 +15,11 @@ lstm_model = None
 
 # Loading models from pkl file
 def load_models():
-    with open('Trained model/isolation_forest_model_xs.pkl', 'rb') as file:
+    with open('C:/Users/anand/Downloads/Projects/Crash Detection System/Detection_model_mobile/Trained model/isolation_forest_model_xs.pkl', 'rb') as file:
         isolation_forest_model = pickle.load(file)
-    with open('Trained model/lstm_autoencoder_model_xs.pkl', 'rb') as file:
+    with open('C:/Users/anand/Downloads/Projects/Crash Detection System/Detection_model_mobile/Trained model/lstm_autoencoder_model_xs.pkl', 'rb') as file:
         lstm_model = pickle.load(file)
-    return isolation_forest_model, lstm_model
+    return isolation_forest_model, lstm_mode
 
 class DateTimeEncoder(json.JSONEncoder):
     def default(self, obj):
