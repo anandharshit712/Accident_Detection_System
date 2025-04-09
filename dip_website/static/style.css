@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../static/images/bds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    color: #000000;
+    text-align: center;
+}
+.login-container, .dashboard-container {
+    margin-top: 13%;
+    background-color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    max-width: 35%;
+    border-radius: 5%;
+    align-self: center;
+    margin-left: 30%;
+}
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ffffff;
+}
+button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+form input{
+    padding: 0.6%;
+    padding-right: 4%;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
