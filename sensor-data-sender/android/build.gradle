@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.0.21"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            // Force use of AndroidX versions
+            force 'androidx.core:core:1.13.1'
+        }
+        // Exclude legacy support libraries
+        exclude group: 'com.android.support', module: 'support-compat'
+        exclude group: 'com.android.support', module: 'support-core-utils'
+        exclude group: 'com.android.support', module: 'support-core-ui'
+        exclude group: 'com.android.support', module: 'support-fragment'
+    }
+}
